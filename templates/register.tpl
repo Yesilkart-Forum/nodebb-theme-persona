@@ -25,6 +25,13 @@
 					</div>
 				</div>
 				<div class="form-group">
+					<label for="location" class="col-lg-4 control-label">[[register:location]]</label>
+					<div class="col-lg-8">
+						<input class="form-control" type="text" placeholder="[[register:location_placeholder]]" name="location" id="location" />
+						<span class="register-feedback" id="location-notify"></span>
+					</div>
+				</div>
+				<div class="form-group">
 					<label for="password" class="col-lg-4 control-label">[[register:password]]</label>
 					<div class="col-lg-8">
 						<input class="form-control" type="password" placeholder="[[register:password_placeholder]]" name="password" id="password" />
