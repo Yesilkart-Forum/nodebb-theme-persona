@@ -1,10 +1,10 @@
 {
   "name": "nodebb-theme-persona-yesilkartforum",
-  "version": "10.1.39",
+  "version": "1.0.0",
   "nbbpm": {
     "compatibility": "^1.13.0"
   },
-  "description": "Modified NodeBB Persona theme for Yesilkart Forum",
+  "description": "Modified NodeBB Persona theme for Yesilkart Forum basedn on 10.1.39",
   "main": "theme.less",
   "repository": {
     "type": "git",
