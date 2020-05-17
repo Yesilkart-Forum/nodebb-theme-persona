@@ -9,6 +9,9 @@
 			</a>
 		</p>
 		<div class="post-content">
+			<div class="title">
+			    <a href="{config.relative_path}/topic/{../topic.slug}<!-- IF ../index -->/{../index}<!-- ENDIF ../index -->">{../topic.title}</a>
+			</div>
 			{../content}
 		</div>
 	</div>
