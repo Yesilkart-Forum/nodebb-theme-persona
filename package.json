@@ -4,7 +4,7 @@
   "nbbpm": {
     "compatibility": "^1.13.0"
   },
-  "description": "Modified NodeBB Persona theme for Yesilkart Forum basedn on 10.1.39",
+  "description": "Modified NodeBB Persona theme for Yesilkart Forum based on 10.1.39",
   "main": "theme.less",
   "repository": {
     "type": "git",
@@ -36,7 +36,7 @@
   ],
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/psychobunny/nodebb-theme-persona/issues"
+    "url": "https://github.com/Yesilkart-Forum/nodebb-theme-persona-yesilkartforum/issues"
   },
   "dependencies": {
     "pulling": "^2.0.0",
