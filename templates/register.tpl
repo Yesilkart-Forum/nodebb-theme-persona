@@ -25,10 +25,11 @@
 					</div>
 				</div>
 				<div class="form-group">
-					<label for="inputlocation" class="col-lg-4 control-label">[[register:location]]</label>
+					<label for="inputlocation" class="col-lg-4 control-label">[[Persona:location]]</label>
 					<div class="col-lg-8">
-						<input class="form-control" type="text" placeholder="[[register:location]]" name="location" id="inputLocation" />
+						<input class="form-control" type="text" placeholder="[[Persona:location]]" name="location" id="inputLocation" />
 						<span class="register-feedback" id="inputlocation"></span>
+						<span class="help-block">[[Persona:help.location]]</span>
 					</div>
 				</div>
 				<div class="form-group">
