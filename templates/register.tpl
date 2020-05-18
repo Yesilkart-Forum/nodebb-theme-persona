@@ -25,10 +25,10 @@
 					</div>
 				</div>
 				<div class="form-group">
-					<label for="location" class="col-lg-4 control-label">[[register:location]]</label>
+					<label for="inputlocation" class="col-lg-4 control-label">[[register:location]]</label>
 					<div class="col-lg-8">
-						<input class="form-control" type="text" placeholder="[[register:location_placeholder]]" name="location" id="location" />
-						<span class="register-feedback" id="location-notify"></span>
+						<input class="form-control" type="text" placeholder="[[register:location]] name="location" id="inputLocation" />
+						<span class="register-feedback" id="inputlocation"></span>
 					</div>
 				</div>
 				<div class="form-group">
