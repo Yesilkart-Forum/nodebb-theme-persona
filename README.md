@@ -5,12 +5,12 @@ Based on Persona Theme version 10.1.39
 
 ## Modifications:
 
-* pagination block added to the top of the topics 
-* topic name added to the last post
+* pagination block added to the top of the topic pages
+* topic name added to the last post on categories view
 * location input is taken during registration
 
 ## Screenshots
 
-![](https://imagizer.imageshack.com/img922/2647/DUvN12.png)
-
 ![](https://imagizer.imageshack.com/img923/3084/KkhAOk.png)
+
+![](https://imagizer.imageshack.com/img922/2647/DUvN12.png)
