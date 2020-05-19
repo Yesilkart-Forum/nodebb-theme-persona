@@ -25,14 +25,6 @@
 					</div>
 				</div>
 				<div class="form-group">
-					<label for="inputlocation" class="col-lg-4 control-label">[[user:location]]</label>
-					<div class="col-lg-8">
-						<input class="form-control" type="text" placeholder="[[user:location]]" name="location" id="inputLocation" />
-						<span class="register-feedback" id="inputlocation"></span>
-						<span class="help-block">[[user:help.location]]</span>
-					</div>
-				</div>
-				<div class="form-group">
 					<label for="inputlocation" class="col-lg-4 control-label">[[persona:location]]</label>
 					<div class="col-lg-8">
 						<input class="form-control" type="text" placeholder="[[persona:location]]" name="location" id="inputLocation" />
