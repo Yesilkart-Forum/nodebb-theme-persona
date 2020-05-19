@@ -2,5 +2,6 @@
     "mobile-menu-side": "Switch which side each mobile menu is on",
     "post-quick-reply": "Post quick reply",
     "help.location": "Please enter the city or state you live in.",
+    "location_placeholder": "Enter Location",
     "location": "Location"
 }
