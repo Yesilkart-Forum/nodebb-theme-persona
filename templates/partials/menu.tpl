@@ -1,4 +1,4 @@
-			<div class="navbar-header">
+<div class="navbar-header">
 				<button type="button" class="navbar-toggle pull-left" id="mobile-menu">
 					<span component="notifications/icon" class="notification-icon fa fa-fw fa-bell-o unread-count" data-content="{unreadCount.notification}"></span>
 					<i class="fa fa-lg fa-fw fa-bars"></i>
@@ -173,7 +173,9 @@
 								<button type="submit" class="btn btn-default hide">[[global:search]]</button>
 							</div>
 						</form>
-						<ul id="quick-search-results" class="dropdown-menu quick-search-results hidden"></ul>
+						<div id="quick-search-container" class="quick-search-container hidden">
+							<div class="quick-search-results-container"></div>
+						</div>
 					</li>
 					<li class="visible-xs" id="search-menu">
 						<a href="{relative_path}/search">
