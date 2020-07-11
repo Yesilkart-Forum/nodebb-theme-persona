@@ -1,12 +1,11 @@
+<!-- IMPORT partials/breadcrumbs.tpl -->
+
 <div class="row">
 	<div class="col-sm-4 col-md-3">
 		<!-- IMPORT partials/flags/filters.tpl -->
 	</div>
 	<div class="col-sm-8 col-md-9">
 		<h2 class="h4">
-			<div class="pull-right">
-				<a class="btn btn-link" href="{config.relative_path}/flags"><i class="fa fa-chevron-left"></i> [[flags:back]]</a>
-			</div>
 			{target_readable}
 			<small><span class="timeago" title="{datetimeISO}"></span></small>
 		</h2>
@@ -127,6 +126,21 @@
 					[[flags:go-to-target]]
 				</a>
 
+				<a class="btn btn-default btn-block" href="#" data-action="assign">
+					<i class="fa fa-id-card-o"></i>
+					[[flags:assign-to-me]]
+				</a>
+
+				{{{ if type_bool.post }}}
+				{{{ if !target.deleted}}}
+				<a class="btn btn-danger btn-block" href="#" data-action="delete-post">[[flags:delete-post]]</a>
+				{{{ else }}}
+				<a class="btn btn-danger btn-block" href="#" data-action="purge-post">[[flags:purge-post]]</a>
+				<a class="btn btn-success btn-block" href="#" data-action="restore-post">[[flags:restore-post]]</a>
+				{{{ end }}}
+				{{{ end }}}
+
+				{{{ if target.uid }}}
 				<div class="btn-group btn-block" data-uid="{target.uid}">
 					<button type="button" class="btn btn-default btn-block dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						<i class="fa fa-street-view"></i>
@@ -137,10 +151,15 @@
 						<li><a href="{config.relative_path}/uid/{target.uid}">[[flags:view-profile]]</a></li>
 						<li><a href="#" data-action="chat">[[flags:start-new-chat]]</a></li>
 						<li role="separator" class="divider"></li>
-						<li><a href="#" data-action="ban">[[user:ban_account]]</a></li>
-						<li><a href="#" data-action="delete">[[user:delete_account]]</a></li>
+						{{{ if privileges.ban }}}<li><a href="#" data-action="ban">[[user:ban_account]]</a></li>{{{ end }}}
+						{{{ if privileges.admin:users }}}
+						<li><a href="#" data-action="delete-account">[[user:delete_account_as_admin]]</a></li>
+						<li><a href="#" data-action="delete-content">[[user:delete_content]]</a></li>
+						<li><a href="#" data-action="delete-all">[[user:delete_all]]</a></li>
+						{{{ end }}}
 					</ul>
 				</div>
+				{{{ end }}}
 
 				<div class="btn-group btn-block">
 					<button type="button" class="btn btn-default btn-block dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
